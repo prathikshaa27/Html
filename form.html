@@ -12,21 +12,24 @@
         body{
             background-color:plum;
         }
+        #specific{
+            text-align: center;
+        }
     </style>
     </head>
     <body>
         <h1>FORMS</h1>
-        <form target="_blank">
+        <form action = "https://www.w3schools.com/js/js_htmldom_methods.asp" target="_blank">
             <fielsdet>
                 <legend>Login Form</legend>
             <label for="Name">Name:</label><br>
-            <input type="text", id="Name", name="Name"><br>
+            <input type="text" id="Name" name="Name"><br>
             <label for="Password">Password:</label><br>
-            <input type="text", id="password", name="password"><br><br>
+            <input type="password" id="password" name="password"><br><br>
             <input type="Submit" value="Register"><br>
             </fielsdet>
             <hr>
-            <h2>Choose any one of the following:</h2>
+            <h2 id="Specific">Choose any one of the following:</h2>
             <input type="radio" id="HTML" name="web fundamentals">
             <label for="HTML">HTML</label><br>
             <input type="radio" id="CSS" name="web fundamentals">
