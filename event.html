@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Example</title>
+        <script>
+            function WindowEvent(){
+                alert("page loaded");
+            }
+            function KeyPressEvent(){
+                console.log("Please enter your name")
+            }
+            function MouseEvent(){
+                document.getElementById("Name").value='';
+            }
+
+        </script>
+    </head>
+    <body onload="WindowEvent()" >
+        <h1>Window event</h1>
+        <p onclick= "alert('Clicked')">Changes happens based on the events. It enables the javascript based on the user behaviour</p><br>
+        <h2>Form Event</h2>
+        <form onsubmit="alert('Form Submitted')">
+        <label for="Name">Name:</label><br>
+        <input type="text" onkeypress="KeyPressEvent()" id="Name" name="Name"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type= "submit" value="Submit">
+        <input type="button" value="clear" onclick="MouseEvent()">
+        </form>
+    </body>
+</html>

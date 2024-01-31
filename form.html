@@ -18,22 +18,31 @@
         #specific {
             text-align: center;
         }
+        .special{
+            font-size: small;
+            color:red ;
+        }       
     </style>
 </head>
 
 <body>
     <h1>FORMS</h1>
-    <form action="https://www.example.com/" target="_blank" onsubmit="return validateForm()">
+    <form action="https://www.example.com/" target="_blank">
         <fieldset>
             <legend>Login Form</legend>
             <label for="Name">Name:</label><br>
-            <input type="text" id="Name" name="name"><br>
+            <input type="text" id="Name" name="name" required><br>
+            <div>
+                <p class="special">Please enter username</p>
+            </div>
             <label for="Password">Password:</label><br>
-            <input type="password" id="Password" name="password"><br><br>
+            <input type="password" id="Password" name="password" required><br>
+            <div>
+                <p class="special">Please enter password</p>
+            </div>
             <input type="Submit" value="Register"><br>
-            <p>Please enter your name and password</p>
+            <input type="reset" value="Reset">
         </fieldset>
-            <script src="demo.js"></script>
 
         <hr>
         <h2 id="Specific">Choose any one of the following:</h2>
