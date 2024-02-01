@@ -1,0 +1,14 @@
+body{
+    font-size: x-large;
+    background-color:goldenrod
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.grid-item{
+    background-color: darkseagreen;
+    padding: 20px;
+    text-align: center;
+}

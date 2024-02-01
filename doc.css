@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: darksalmon;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "footer";
+    min-height:1OOvh;
+}
+h1{
+    grid-area: header;
+    text-align: center;
+    margin: 20px 0;
+}
+nav{
+    grid-area: nav;
+    text-align: center;
+    margin: 2opx 0;
+}
+nav A{
+    margin: 0 10px;
+}
+.blood{
+    grid-area: content;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 2Opx 0;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    background-color: crimson;
+}
