@@ -6,7 +6,7 @@ body{
     background-color: peru;
     flex-direction: column;
     align-content:stretch;
-    height: 300;
+    height: 600px;
 }
 .flex-container>div{
     background-color: crimson;
