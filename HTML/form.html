@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width initial scale=1.0">
+    <meta charset="UTF-8">
+    <style>
+        form {
+            color: black;
+            font-size: x-large;
+        }
+
+        body {
+            background-color: plum;
+        }
+
+        #specific {
+            text-align: center;
+        }
+        .special{
+            font-size: small;
+            color:red ;
+        }       
+    </style>
+</head>
+
+<body>
+    <h1>FORMS</h1>
+    <form action="https://www.example.com/" target="_blank">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="name" required><br>
+            <div>
+                <p class="special">Please enter username</p>
+            </div>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" name="password" required><br>
+            <div>
+                <p class="special">Please enter password</p>
+            </div>
+            <input type="Submit" value="Register"><br>
+            <input type="reset" value="Reset">
+        </fieldset>
+
+        <hr>
+        <h2 id="Specific">Choose any one of the following:</h2>
+        <input type="radio" id="HTML" name="web fundamentals">
+        <label for="HTML">HTML</label><br>
+        <input type="radio" id="CSS" name="web fundamentals">
+        <label for="CSS">CSS</label><br>
+        <input type="radio" id="Javascript" name="web fundamentals">
+        <label for="Javascript">Javascript</label><br>
+        <hr>
+        <h2>Select one or more options:</h2>
+        <input type="checkbox" id="C Programming" ,name="programming languages">
+        <label for="C Programming">C Programming</label><br>
+        <input type="checkbox" id="Python" ,name="programming languages">
+        <label for="Python">Python</label><br>
+        <input type="checkbox" id="Java" ,name="Programming Languages">
+        <label for="Java">Java</label>
+        <hr>
+        <h2>Choose any one of the option from the given choices:</h2>
+        <label for="Languages">Languages:</label>
+        <select id="Languages" name="Languages">
+            <option value="Tamil">Tamil</option>
+            <option value="Telgu">Telgu</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Kannada">Kannada</option>
+            <option value="English">English</option>
+        </select>
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

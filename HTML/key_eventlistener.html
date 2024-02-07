@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keydown event listener</title>
+    </head>
+    <body>
+        <input type="text" id="sample">
+        <script>
+            const input=document.getElementById("sample");
+            input.addEventListener('keydown',function(event){
+                console.log('key name:',event.key);
+            });
+        </script>
+    </body>
+    </html>

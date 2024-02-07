@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form submission event listener</title>
+    </head>
+    <style>
+        body{
+            background-color: khaki;
+        }
+    
+    </style>
+<body>
+    <form id="example">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" onfocus="this.style.backgroundColor='orange' " onblur="this.style.backgroundColor='white'"><br>
+        <button type="submit">Submit</button>
+        </form>
+        <script>
+            const form=document.getElementById("example");
+            form.addEventListener('submit',function(){
+                alert('Form submitted');
+            });
+
+        </script>
+        </body>
+        <html>

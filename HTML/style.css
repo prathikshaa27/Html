@@ -1,0 +1,20 @@
+body{
+    background-color: dimgray;
+}
+.flex-container{
+    display: flex;
+    background-color: peru;
+    flex-direction: column;
+    justify-content: center;
+    align-content:stretch;
+    height: 1000px;
+}
+.flex-container>div{
+    background-color: crimson;
+    margin: 20px;
+    padding: 20px ;
+    height: 20vh;
+    font-size: x-large;
+    text-align: center;
+
+}

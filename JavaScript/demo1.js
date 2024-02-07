@@ -96,7 +96,7 @@ const squares= number6=>number6*number6;{
     
  }
 
- 
+ //Looping
  for(i=1;i<=10;i++){
     console.log("prathi")
  }
@@ -117,6 +117,24 @@ for(i=2;i<=10;i=i+2){
 for(i=1;i>=1;i--){
    console.log(i);
 }
+//While loop
+let count=0;
+while(count<10){
+   console.log(count);
+   count++;
+}
+//reverse a number
+var remainder;
+var reverse=0;
+var number_used=123;
+while(number_used!=0){
+   remainder=number_used%10;
+   reverse=reverse*10+remainder;
+   number_used= Math.floor(number_used/10);
+}
+console.log(reverse);
+
+
 //strings
 const string="Prathi";
 console.log(string);
@@ -264,4 +282,5 @@ const students=[
 ];
 const filterage=students.filter(students=>students.age>19);
 console.log(filterage);
+
 
