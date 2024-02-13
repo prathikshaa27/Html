@@ -111,3 +111,11 @@ let num = [2,4,6,8,10,12];
 let tocheckeven = num.every(num=>num%2==0);{
    console.log(tocheckeven);
 }
+
+const numbers10 = [1,4,5,6,7];
+const total = numbers10.reduce((sum,sum1)=>sum+sum1,0);
+console.log(total);
+
+let arrr1=[1,2,3,4]
+arrr1.copyWithin(2,0,2)
+console.log(arrr1)

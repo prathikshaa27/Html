@@ -1,0 +1,9 @@
+[{
+    "Name":"prathi",
+    "Age": 22,
+    "City":{"Coimbatore": 621033, "chennai": 638209}
+},{
+    "Name":"Mike",
+    "Age":15,
+    "City":{"Coimbatore": 621033, "chennai": 638209}
+}]

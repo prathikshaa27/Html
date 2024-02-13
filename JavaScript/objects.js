@@ -19,6 +19,10 @@ person.age=19;
 console.log(person.age);
 console.log(person.Siblings);
 console.log(person.Siblings.elder_brother);
+person.Siblings.elder_brother="Senthil1";
+console.log(person.Siblings.elder_brother);
+Object.freeze(person);
+this.Name="Jack"
 
 //bracket notation
 console.log(person['Gender']);
@@ -34,14 +38,27 @@ const myself={
 };
 myself.intro();
 
-//constructor
+//factory
 
-function Sample(name){
-    this.name=name;
-    this.greetings=function(){
-        console.log(`Iam ${this.name}`);
-    }
-
+/*function createPerson(name,age){
+    return{
+        name:name,
+        age:age,
+        Greetings:function(){
+            console.log("Hello my name is " + this.name);
+        }
+    };
 }
-let sample= new Sample("Prathikshaa");
-sample.greetings();
+const person1 = CreatePerson("John", 11);
+person1.Greetings();*/
+
+//constructor
+function NewPerson(gender,place){
+    this.gender=gender;
+    this.place=place;
+    this.details=function(){
+        console.log(`My gender is ${this.gender} and my place is ${this.place}`);
+    };
+}
+const newobj = new NewPerson("Female","Coimbatore");
+newobj.details();

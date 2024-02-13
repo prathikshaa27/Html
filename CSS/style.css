@@ -4,9 +4,12 @@ body{
 .flex-container{
     display: flex;
     background-color: peru;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: end;
     align-content:stretch;
-    height: 600px;
+    align-items:left;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 .flex-container>div{
     background-color: crimson;

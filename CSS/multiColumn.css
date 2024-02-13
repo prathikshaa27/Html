@@ -7,7 +7,7 @@ body{
     color: indianred;
 }
 .multicolumn-container{
-    column-count: 2;
+    column-count: 3;
     column-gap: 20px;
     max-width: 800px;
     margin:auto ;
