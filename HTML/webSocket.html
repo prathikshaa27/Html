@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>Simple WebSocket Example</title>
+</head>
+<body>
+
+<h2>WebSocket Example</h2>
+
+<input type="text" id="messageInput" placeholder="Enter a message">
+<button onclick="sendMessage()">Send Message</button>
+
+<script>
+const socket = new WebSocket('wss://javascript.info/article/websocket/demo/hello');
+
+socket.onopen = function(event) {
+  console.log('WebSocket connection established.');
+};
+
+socket.onmessage = function(event) {
+  console.log('Received message:', event.data);
+};
+
+socket.onerror = function(error) {
+  console.error('WebSocket error:', error);
+};
+
+function sendMessage() {
+  const messageInput = document.getElementById('messageInput');
+  const message = messageInput.value.trim();
+  if (message) {
+    socket.send(message);
+    messageInput.value = '';
+  }
+}
+</script>
+
+</body>
+</html>

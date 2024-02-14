@@ -22,8 +22,8 @@ class Employee{
     }
 }
 class Manager extends Employee{
-    constructor(Name,id,domain){
-        super(Name,id);
+    constructor(domain){
+        super();
         this.domain=domain;
     }
     manage(){

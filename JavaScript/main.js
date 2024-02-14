@@ -1,11 +1,7 @@
-//synchronous
-/*
-console.log("First");
-console.log("Second");
-console.log("third"); */
+let worker = new Worker('worker.js');
 
-//Asynchronous
-setTimeout(() =>console.log("First"), 5000);
-setTimeout(() =>console.log("second") ,3000);
-setTimeout(() =>console.log("Third"), 1000);
+worker.onmessage = function(event) {
+  console.log('Message from worker:', event.data);
+};
 
+worker.postMessage('Hello from main script!');

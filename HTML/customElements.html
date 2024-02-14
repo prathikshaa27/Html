@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Worker Example</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Custom Element</title>
 </head>
 <body>
-  <h1>Web Worker Example</h1>
 
-  <script>
-    // Create a new web worker from the worker.js file
-    const worker = new Worker('worker.js');
+<script>
 
-    // Send a message to the worker
-    worker.postMessage('hello world');
+class SimpleCustomElement extends HTMLElement {
+  constructor() {
+    super();
+    
+  
+    const paragraph = document.createElement('p');
+    
 
-    // Receive messages from the worker
-    worker.onmessage = function(event) {
-      // Handle the result received from the worker
-      console.log('Result:', event.data);
-    };
-  </script>
+    paragraph.textContent = 'This is a simple custom element!';
+    
+    this.appendChild(paragraph);
+  }
+}
+
+customElements.define('simple-custom-element', SimpleCustomElement);
+</script>
+
+<simple-custom-element></simple-custom-element>
+
 </body>
 </html>

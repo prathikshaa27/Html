@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .current {
+          font-weight: bold;
+        }
+        </style>
+<title>History</title>
+</head>
+<body>
+
+   <h2>History</h2>
+<ul id="history-list"></ul>
+
+<input type="text" id="item" placeholder="Enter an item">
+<button onclick="addToHistory()">Add to History</button>
+<button onclick="goBack()">Go Back</button>
+
+<script>
+
+let history = [];
+let historyIndex = -1;
+
+function addToHistory() {
+  const Item = document.getElementById('item');
+  const newItem = newItemInput.value.trim();
+  if (newItem) {
+    history.push(newItem);
+    historyIndex = history.length - 1;
+    renderHistory();
+    newItemInput.value = '';
+  }
+}
+
+function renderHistory() {
+  const historyList = document.getElementById('history-list');
+  historyList.innerHTML = '';
+  history.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    if (index === historyIndex) {
+      li.classList.add('current');
+    }
+    historyList.appendChild(li);
+  });
+}
+
+function goBack() {
+  if (historyIndex > 0) {
+    historyIndex--;
+    renderHistory();
+  } else {
+    alert("No history to go back!");
+  }
+}
+
+renderHistory();
+</script>>
+
+</body>
+</html>

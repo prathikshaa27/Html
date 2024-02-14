@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Worker Example</title>
-</head>
+<html>
+    <head>
+        <title>WEB WORKERS</title>
+    </head>
 <body>
-  <h1>Web Worker Example</h1>
+    <p>Web Worker Example</p>
+    <script>
+        const worker = new Worker('worker.js');
 
-  <script src="workers.js">
-  
-    const worker = new Worker('worker.js');
+     worker.onmessage = function(event) {
+    console.log('Message from worker:', event.data);
+};
 
-  
-    worker.postMessage('hello world');
-
-    worker.onmessage = function(event) {
- 
-      console.log('Result:', event.data);
-    };
-  </script>
+worker.postMessage('Hello from main script!');
+    </script>
 </body>
 </html>

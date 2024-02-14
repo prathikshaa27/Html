@@ -25,9 +25,6 @@ fruits.slice(1,2);
 console.log(fruits);
 
 //combining two arrays
-let fruits1=["apple", "mango","grapes"];
-let fruits2=["Orange","Pineapple","strawberry"];
-console.log(fruits1.concat(fruits2));
 
 //splice
 
