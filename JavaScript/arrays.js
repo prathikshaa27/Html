@@ -116,3 +116,7 @@ console.log(total);
 let arrr1=[1,2,3,4]
 arrr1.copyWithin(2,0,2)
 console.log(arrr1)
+
+let array = [12,3,4,5,6,8];
+let output = array.reduce((array,array1)=>array+array1)
+   console.log(output);

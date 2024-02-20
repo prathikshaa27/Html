@@ -13,7 +13,7 @@ function add(...numbers){
     
     
 }
-console.log(add(2,3,6,7,8));
+console.log(add(2,3,12,2,6,7,8));
 
 //spread operator
 

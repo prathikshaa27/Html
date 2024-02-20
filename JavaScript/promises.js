@@ -34,3 +34,23 @@ data
     .finally(() => {
         console.log("Finally block is executed");
     });
+
+    const promise = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            const name =false;
+            if(name){
+                console.log("Resolved")
+            }
+            else{
+                console.log("Oops rejected")
+            }
+        },2000);
+    });
+    promise
+    .then((samp)=>{
+        console.log("Success promise resolved")
+    })
+    .catch((err) =>{
+        console.log("Error")
+    })
+

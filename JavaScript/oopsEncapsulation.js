@@ -1,30 +1,28 @@
-class Person{
-    constructor(name,aadharNo){
-        this._name=name;
-        this._aadharNo=aadharNo;
-    }
-     getName(){
-        return this._name;
-     }
-     getAadharNo(){
-        return this._aadharNo;
-     }
-     setName(name){
-        this._name=name;
-     }
-     setAadharNo(aadharNo){
-        this._aadharNo=aadharNo;
-     }
-     greetings(){
-        console.log(`Hi this is ${this._name} and my aadhar no is ${this._aadharNo}`);
-     }
+class Counter {
+   #count = 0; 
+
+   increment() {
+       this.#count++; 
+   }
+
+   decrement() {
+       if (this.#count > 0) {
+           this.#count--; 
+       }
+   }
+
+   getCount() {
+       return this.#count; 
+   }
 }
-const person = new Person("Lia", 1233562788282);
 
-console.log(person.getName());
-console.log(person.getAadharNo());
-person.greetings();
 
-person.setName("Riya");
-person.setAadharNo(1223636611717);
-person.greetings();
+const counter = new Counter();
+console.log("Initial count:", counter.getCount()); 
+counter.increment();
+counter.increment();
+counter.increment();
+console.log("Count after incrementing:", counter.getCount()); 
+counter.decrement();
+console.log("Count after decrementing:", counter.getCount()); 
+//console.log(counter.#count); 
