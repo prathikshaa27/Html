@@ -120,3 +120,31 @@ console.log(arrr1)
 let array = [12,3,4,5,6,8];
 let output = array.reduce((array,array1)=>array+array1)
    console.log(output);
+
+array = ["prathi","Mike","senthil","xxx"];
+console.log(array.toString());
+console.log(array.at(1));
+console.log(array.join())
+console.log(array.copyWithin(1,2))
+
+array1=[[1,2],[3,4],[5,6]];
+console.log(array1.flat());
+
+array2 =[1,23,5,10,1,4,6,];
+arr = array2.find(num=>num%2==0);
+arr1 = array2.findIndex(num=>num%2==0)
+arr2 = array2.findLast(num=>num%2==0)
+arr3 = array2.findLastIndex(num=>num%2==0)
+console.log(array2.sort(function (a,b){return a-b}))
+console.log(arr);
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+
+
+
+
+
+
+

@@ -269,10 +269,22 @@ function swapCase(inputString) {
 const input = 'The Quick Brown Fox';
 console.log("Swapped case:", swapCase(input)); 
 
-function passedStudents(students, totalMark) {
+/*function passedStudents(students, totalMark) {
     return students.filter(student => student.marks.some(mark => mark >= totalMark)).length;
   }
   
   const totalMark1 = 30;
   const totalpassedStudents1 = passedStudents(students, totalMark);
-  console.log("Total number of students passed:", totalpassedStudents);
+  console.log("Total number of students passed:", totalpassedStudents);*/
+
+  function passedStudents(students) {
+    return function(totalMark) {
+      return students.filter(student => student.marks.some(mark => mark >= totalMark)).length;
+    };
+  }
+  
+  const students1 = [] ;
+  
+  const totalpassedStudents1 = passedStudents(students);
+  const totalMark1 = 30;
+  console.log("Total number of students passed:", totalpassedStudents1(totalMark1));
