@@ -16,6 +16,10 @@ import {Objs} from "./RenderingLists1"
 import {Event} from "./Events";
 import {Event1} from "./Events";
 import {Event2} from './Events';
+import { User } from "./FunctionProps";
+import {Count} from "./State"
+import {Counter} from "./FunctionState"
+import {Counter1} from "./FunctionState"
 class App extends Component{
   render(){
     return(
@@ -24,6 +28,7 @@ class App extends Component{
         <NewComponent/>
         <NewComponent1/>
         <NewComponent2/>
+        <Count/>
   
       </div>
     );
@@ -43,6 +48,13 @@ function App1(){
       <Event/>
       <Event1/>
       <Event2 />
+      <User name="Prathi"/>
+      <User age={22}/>
+      <User name="Mike"/>
+      <User age={15}/>
+      <Counter/>
+      <Counter1/>
+     
       
     </div>
   )
