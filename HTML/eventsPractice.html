@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample events</title>
+    </head>
+<body>
+    <h1 id= "class">heading</h1>
+    <form onsubmit="alert('Form submitted')">
+        <label for= "Name">Name:</label>
+        <input type="text", id="Name" name="Name">
+        <button>Submit</button>
+    </form>
+</body>
+<script>
+
+    const h1 = document.getElementById("class");
+    h1.addEventListener("click",function(){
+        h1.style.color = "Red";
+    });
+    
+
+</script>
+</html>

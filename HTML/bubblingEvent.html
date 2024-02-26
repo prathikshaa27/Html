@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event bubble and Event capture</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner">
+              Click here!
+            </div>
+          </div>
+           <script>
+          document.getElementById("inner").addEventListener("click", function() {
+            console.log("Clicking the inner part");
+          });
+          document.getElementById("outer").addEventListener("click", function() {
+            console.log("Clicking the output part");
+          });
+        </script>
+          </body>
+         
+         
+    </body>
+</html>

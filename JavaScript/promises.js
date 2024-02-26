@@ -35,7 +35,7 @@ data
         console.log("Finally block is executed");
     });
 
-    const promise = new Promise((resolve,reject)=>{
+/*const promise = new Promise((resolve,reject)=>{
         setTimeout(()=>{
             const name =false;
             if(name){
@@ -52,5 +52,5 @@ data
     })
     .catch((err) =>{
         console.log("Error")
-    })
+    })*/
 

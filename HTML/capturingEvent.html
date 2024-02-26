@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event capturing</title>
+    </head>
+    <body>
+        <div id="out">
+            <div id="in">
+              Click Here!
+            </div>
+          </div>
+          <script>
+            document.getElementById("out").addEventListener("click", function() {
+           console.log("Clicking the outer part (capturing phase)");
+           }, true); 
+
+
+         document.getElementById("in").addEventListener("click", function() {
+         console.log("Clicking the inner part (capturing phase)");
+        }, true); 
+          </script>
+    </body>
+</html>

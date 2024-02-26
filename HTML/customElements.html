@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Custom Element</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Element Example</title>
 </head>
 <body>
 
-<script>
 
-class SimpleCustomElement extends HTMLElement {
-  constructor() {
-    super();
+  <new-element></new-element>
+
+  <script>
     
-  
-    const paragraph = document.createElement('p');
+    class MyElement extends HTMLElement {
+      constructor() {
+        super(); 
+        this.textContent = "This is a custom element."; 
+      }
+    }
+
     
-
-    paragraph.textContent = 'This is a simple custom element!';
-    
-    this.appendChild(paragraph);
-  }
-}
-
-customElements.define('simple-custom-element', SimpleCustomElement);
-</script>
-
-<simple-custom-element></simple-custom-element>
+    customElements.define('new-element', MyElement);
+  </script>
 
 </body>
 </html>

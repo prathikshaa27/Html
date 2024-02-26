@@ -12,6 +12,7 @@ body{
     flex-wrap: wrap;
 }
 .flex-container>div{
+
     background-color: crimson;
     margin: 20px;
     padding: 20px ;

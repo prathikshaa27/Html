@@ -17,7 +17,7 @@ async function Todisplaydata(){
         console.log("Collecting user data");
         const data = await Userdata();
         console.log("User data has been collected:" ,data);
-        console.log(`Naame:${data.Name}, Age:${data.age}`);
+        console.log(`Name:${data.Name}, Age:${data.age}`);
     }
     catch(err){
         console.log(err);

@@ -30,5 +30,5 @@ let numeric = 1.10;
 console.log(Math.floor(numeric));
 
 //Number sign determination
-let interger = 
+let interger = -21 
 console.log(Math.sign(interger));

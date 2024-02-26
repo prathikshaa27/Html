@@ -20,3 +20,7 @@ function greet(){
     console.log("Hi iam prathi")
 }
 greet();
+
+
+
+
