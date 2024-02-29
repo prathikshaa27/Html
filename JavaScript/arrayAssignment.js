@@ -277,14 +277,14 @@ console.log("Swapped case:", swapCase(input));
   const totalpassedStudents1 = passedStudents(students, totalMark);
   console.log("Total number of students passed:", totalpassedStudents);*/
 
-  function passedStudents(students) {
-    return function(totalMark) {
-      return students.filter(student => student.marks.some(mark => mark >= totalMark)).length;
-    };
+  function countPassedStudents(studentsData, passMark) {
+    const passedStudents = studentsData.filter(student => {
+      const totalMarks = student.marks.reduce((sum, mark) => sum + mark, 0);
+      return totalMarks >= passMark;
+    });
+    return passedStudents.length;
   }
+  const passMark = 30;
+  const passedStudentsCount = countPassedStudents(students, passMark);
+  console.log(`Number of students passed: ${passedStudentsCount}`);
   
-  const students1 = [] ;
-  
-  const totalpassedStudents1 = passedStudents(students);
-  const totalMark1 = 30;
-  console.log("Total number of students passed:", totalpassedStudents1(totalMark1));

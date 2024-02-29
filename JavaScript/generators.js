@@ -5,7 +5,7 @@ function* count(){
     }
 }
 let counter = count();
-console.log(counter.next().value);
+console.log(counter.next().value);  
 console.log(counter.next().value);
 console.log(counter.next().value);
 console.log(counter.next().value);
