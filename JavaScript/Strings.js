@@ -1,7 +1,7 @@
 let string = "I love coding";
 console.log(string.split(" "));
 
-const example =(...) => {
+const example =(...number) => {
     const result= example.reduce((num,example), num+example)
     console.log(result)
     
